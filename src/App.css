@@ -23,7 +23,9 @@ textarea {
 
 input,
 select {
-  width: 10rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  width: 12rem;
 }
 
 body {

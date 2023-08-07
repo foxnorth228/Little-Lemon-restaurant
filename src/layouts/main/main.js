@@ -1,10 +1,10 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
 
-const Main = () => {
+
+const Main = ({ children }) => {
     return (
         <main className="App">
-            <Outlet />
+            {children}
         </main>
     );
 }

@@ -1,0 +1,27 @@
+.bookingForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 46.2vh;
+    gap: 2rem;
+    margin: 0 auto 1.875rem auto;
+}
+
+.bookingForm button {
+    background-color: #EDEFEE;
+    border-color: #EDEFEE;
+    font-size: 1.25em;
+}
+
+.bookingForm button:disabled,
+.bookingForm button[disabled] {
+    background-color: #EDEFEE;
+    border-color: #EDEFEE;
+    color: #ADAFAE;
+    cursor: not-allowed;
+}
+
+.bookingForm button:hover {
+    cursor: pointer;
+}
