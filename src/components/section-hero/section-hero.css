@@ -1,0 +1,51 @@
+.section__hero {
+    background-color: #495e57;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.25rem 5rem 1.2rem 5rem;
+}
+  
+.hero__titleBlock > h1 {
+    font-size: 3rem;
+    margin-top: 0rem;
+    margin-bottom: -3rem;
+}
+  
+.hero__titleBlock > h2 {
+    font-size: 2.5rem;
+}
+  
+.hero__image {
+    max-height: 17rem;
+    padding-left: 2rem;
+}
+  
+.hero__image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 50rem) {
+    .hero__titleBlock > p {
+        font-size: 0.8rem;
+    }
+}  
+
+@media (max-width: 600px) {
+    .hero__titleBlock > h1 {
+        font-size: 2.2rem;
+        margin-top: 0rem;
+        margin-bottom: -2rem;
+    }
+    
+    .hero__titleBlock > h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    .section__hero {
+        margin: 0;
+        padding: 1.25rem 2rem 1.2rem 2rem;
+    }
+}

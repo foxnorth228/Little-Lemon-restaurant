@@ -1,0 +1,91 @@
+.section__aboutUs {
+    background-color: #f4ce14;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.25rem 5rem 2.5rem 5rem;
+    min-height: 22rem;
+    margin-bottom: -1rem;
+    grid-gap: 25vw;
+}
+  
+.aboutUs__text {
+    margin-top: -1.5rem;
+}
+  
+.aboutUs__doubleImage {
+    max-height: 18rem;
+    position: relative;
+    top: 4rem;
+    left: 2rem;
+}
+  
+.aboutUs__doubleImage > img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.aboutUs__doubleImage_1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+  
+.aboutUs__doubleImage_2 {
+    position: absolute;
+    top: -3.5rem;
+    left: 5rem;
+}
+
+@media (max-width: 60rem) {
+    .aboutUs__doubleImage {
+        max-height: 16rem;
+      }
+    
+      .section__aboutUs {
+        grid-gap: 12vw;
+      }
+}
+
+@media (max-width: 50rem) {
+    .section__aboutUs {
+        grid-gap: 8vw;
+      }
+    
+      .aboutUs__doubleImage {
+        max-height: 16rem;
+      }
+}
+
+@media (max-width: 600px) {
+    .section__aboutUs {
+        padding: 1rem 0.5rem 0 0.5rem;
+        margin-top: 2rem;
+        grid-gap: 1vw;
+    }
+    
+    .aboutUs__doubleImage {
+        max-height: 14rem;
+        position: relative;
+        top: 4rem;
+        left: 2rem;
+    }
+    
+    .aboutUs__doubleImage > img {
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+    }
+    
+    .aboutUs__doubleImage_1 {
+        position: relative;
+        top: 4rem;
+        left: -1rem;
+    }
+    
+    .aboutUs__doubleImage_2 {
+        position: absolute;
+        top: -3rem;
+        left: 1rem;
+    }
+}
