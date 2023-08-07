@@ -1,30 +1,24 @@
-import React from 'react';
+import { useState } from "react";
+import Menu from "./Navigation";
+import Hamburger from "../../assets/hamburger.png";
+import Close from "../../assets/close.png";
+import './nav.css';
 
-const Nav = () => {
-    return (
-        <nav>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/">About</a>
-                </li>
-                <li>
-                    <a href="/">Menu</a>
-                </li>
-                <li>
-                    <a href="/">Reservations</a>
-                    </li>
-                <li>
-                    <a href="/">Order online</a>
-                    </li>
-                <li>
-                    <a href="/">Login</a>
-                </li>
-            </ul>
-        </nav>
-    );
+export default function Navbar() {
+  const [navbarOpen, setNavbarOpen] = useState(false);
+  function handleToggle() {
+    setNavbarOpen(!navbarOpen);
+  }
+
+  return (
+    <nav>
+      <ul className="nav__icon_burger">
+        <button className="nav__icon_button" onClick={handleToggle}>
+          <img src={navbarOpen ? Close : Hamburger} alt="Navigation Bar" />
+        </button>
+      </ul>
+      <Menu device="desktop" />
+      {navbarOpen ? <Menu device="mobile" /> : ""}
+    </nav>
+  );
 }
-
-export default Nav;

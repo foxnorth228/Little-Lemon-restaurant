@@ -1,57 +1,70 @@
+import logo from "../../assets/footer-logo.png";
+import menu from "../../assets/menu.webp";
 import React from 'react';
-import logo from '../../assets/Logo.svg';
+import './footer.css';
 
-const Footer = () => {
+export default function Footer() {
     return (
-        <footer>
-            <img alt="logo" src={logo} />
-            <div>
-                <h3>Doormat Navigation</h3>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="/">Home</a>
-                        </li>
-                        <li>
-                            <a href="/">About</a>
-                        </li>
-                        <li>
-                            <a href="/">Menu</a>
-                        </li>
-                        <li>
-                            <a href="/">Reservations</a>
-                        </li>
-                        <li>
-                            <a href="/">Order online</a>
-                            </li>
-                        <li>
-                            <a href="/">Login</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <h3>Contact</h3>
-                <address>
-                    <ul>
-                        <li>Address</li>
-                        <li>Email</li>
-                        <li>Phone</li>
-                    </ul>
-                </address>
-            </div>
-            <div>
-                <h3>Social media links</h3>
-                <address>
-                    <ul>
-                        <li>Address</li>
-                        <li>Email</li>
-                        <li>Phone</li>
-                    </ul>
-                </address>
-            </div>
+        <footer className="footer">
+            <img
+              src={logo}
+              className="footer__image"
+              alt="Little Lemon logo"
+            ></img>
+            <nav className="footer__nav">
+                <h1 className="footer__header">Navigation</h1>
+                <ul className="footer__link">
+                    <a href="/">Home</a>
+                    <a href="/about">About</a>
+                    <a
+                        href={menu}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                    Menu
+                    </a>
+                    <a href="/reservations">Reservations</a>
+                    <a href="/order">Order</a>
+                    <a href="/login">Login</a>
+                </ul>
+            </nav>
+            <address className="footer__address">
+                <h1 className="footer__header">Contact</h1>
+                <ul className="footer__link">
+                    <li>2395 Maldove Way,</li>
+                    <li>Chicago Illinois</li>
+                    <br></br>
+                    <li>(629)-243-6827</li>
+                    <br></br>
+                    <a
+                        href="mailto: info@littlelemon.com"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                    info@littlelemon.com
+                    </a>
+                </ul>
+            </address>
+            <article>
+                <h1 className="footer__header">Connect</h1>
+                <ul className="footer__link">
+                    <a
+                        href="https://www.facebook.com/thelittlelemonshop/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                    Facebook
+                    </a>
+                    <a
+                        href="https://www.instagram.com/littlelemonmoon/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                    Instagram
+                    </a>
+                </ul>
+            </article>
         </footer>
     );
-}
-
-export default Footer;
+  }
+  

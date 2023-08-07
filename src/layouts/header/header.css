@@ -1,0 +1,14 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.header__image {
+    justify-self: center;
+    align-self: flex-start;
+    max-height: 4rem;
+    margin-left: 0.7em;
+    height: 4rem;
+  }
